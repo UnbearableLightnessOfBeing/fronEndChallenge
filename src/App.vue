@@ -39,7 +39,7 @@ export default {
   mounted() {
     this.navChilds = document.querySelector('.primary-navigation').childNodes;
         // Get saved data from sessionStorage
-    let data = sessionStorage.getItem('bg');
+    let data = sessionStorage.getItem('bg') ?? 'home';
     this.background = data;
   },
   methods: {
